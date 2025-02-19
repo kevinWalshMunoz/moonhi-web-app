@@ -16,7 +16,7 @@ const Calculator = () => {
     };
 
     try {
-      const response = await fetch('http://ec2-3-95-155-9.compute-1.amazonaws.com/api/calculator', {
+      const response = await fetch('/api/calculator', {
         referrerPolicy: 'unsafe-url',
         method: 'POST',
         headers: {
