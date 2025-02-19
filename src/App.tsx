@@ -6,7 +6,7 @@ const Calculator = () => {
   const [operation, setOperation] = useState('');
   const [number2, setNumber2] = useState('');
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const data = {
