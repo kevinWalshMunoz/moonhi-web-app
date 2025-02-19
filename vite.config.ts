@@ -9,7 +9,7 @@ export default defineConfig({
       "/api": {
         target: "http://ec2-3-95-155-9.compute-1.amazonaws.com", // Cambia esto por tu API
         changeOrigin: true,
-        secure: false, // Si el backend usa HTTPS con certificado autofirmado, usa false
+        secure: true, // Si el backend usa HTTPS con certificado autofirmado, usa false
       },
     },
   },
